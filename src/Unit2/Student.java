@@ -14,4 +14,19 @@ public class Student {
 
     }
 
+    //default constructor
+    public Student(){
+        //default constructor
+        //should assign default values
+        //for each attribute
+        name = "guest";
+        age = -1;
+    }
+
+    public Student(String name){
+        this.name = name;
+        this.age = -1;
+    }
+
+
 }

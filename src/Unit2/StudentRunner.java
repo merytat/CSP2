@@ -19,5 +19,8 @@ public class StudentRunner {
         System.out.println("Name: " + juho.name);
         System.out.println("Age: " + juho.age);
 
+        Student jacob = new Student("Jacob");
+        //Student charlene = new Student(16);
+
     }
 }
