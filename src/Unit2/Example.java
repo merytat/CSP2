@@ -6,18 +6,22 @@ public class Example {
     }
 
     public boolean method2(){
+        return true;
     }
-    
+
     private String method3(int a){
+        return "";
     }
 
     public void method4(String name){
     }
 
     public double method5(){
+        return 2;
     }
 
     public int method6(boolean isStudent){
+        return 2;
     }
 }
 
