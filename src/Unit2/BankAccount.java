@@ -10,4 +10,20 @@ public class BankAccount {
     public void calculateBalance(){
         //missing code
     }
+
+    public void closeAccount(){
+
+    }
+
+    public void changeAccountNumber(){
+
+    }
 }
+
+
+/*class BankAccountTester{
+    public static void main(String[] args) {
+
+    }
+
+}*/
