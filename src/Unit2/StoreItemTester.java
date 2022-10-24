@@ -33,7 +33,7 @@ public class StoreItemTester {
 
 
         //testing private attributes
-        st1.getName()
+        st1.getName();
 
         System.out.println("Enter the product name" );
         name = kb.nextLine();
