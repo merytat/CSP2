@@ -14,6 +14,13 @@ public class Student {
 
     }
 
+    @Override
+    public String toString(){
+        String stOutput = "Student name: " + name +
+                "\nStudent Age: " + age;
+        return stOutput;
+    }
+
     //default constructor
     public Student(){
         //default constructor
