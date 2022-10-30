@@ -12,8 +12,7 @@ public class StudentRunner {
         juho.age = 14;
 
         System.out.println("Student 1:");
-        System.out.println("Name: " + hwisung.name);
-        System.out.println("Age: " + hwisung.age);
+        System.out.println(hwisung);
 
         System.out.println("Student 2:");
         System.out.println("Name: " + juho.name);
