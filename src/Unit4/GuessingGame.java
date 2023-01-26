@@ -14,6 +14,31 @@ public class GuessingGame {
         }
     }
 
+    public int[] cleanArray(){
+        int temp[] = new int[numbers.length];
+        int index = 0;
+
+        for(int i = 0; i < numbers.length; i++){
+            boolean found = false;
+            for(int j = 0; j < temp.length; j++){
+                if(numbers[i] == temp[j]){
+                    found = true;
+                }
+            }
+            if(found == false){
+                temp[index] = numbers[i];
+                index++;
+            }
+        }
+
+        int real[] = new int[index];
+        for(int i = 0; i<real.length; i++){
+            real[i] = temp[i];
+        }
+        return real;
+
+    }
+
     public int search(int searchValue){
         //implementation of search algorithm
         int flag = -1;
