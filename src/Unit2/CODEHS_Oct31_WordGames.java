@@ -13,6 +13,7 @@ public class CODEHS_Oct31_WordGames
     {
         // switch first half
         // and second half
+        //turtle -> tletur
         int length = word.length();
         int middle = length / 2;
 
@@ -24,6 +25,7 @@ public class CODEHS_Oct31_WordGames
     {
         // Insert insertText at the position
         // insertIdx
+        //insertText = BOO, insertIdx = 2 word= ghost = ghBOOost
         return word.substring(0, insertIdx) + insertText + word.substring(insertIdx);
     }
 
@@ -32,8 +34,10 @@ public class CODEHS_Oct31_WordGames
     {
         // Insert insertText after the first
         // occurence of the insertChar
+        //insertText = BOO; insertChar = 'o' text= ghost =  ghBOOost
         int idx = word.indexOf(insertChar);
-        return word.substring(0, idx) + insertText + word.substring(idx);
+        return bananaSplit(idx,insertText);
+        //return word.substring(0, idx) + insertText + word.substring(idx);
     }
 
 
