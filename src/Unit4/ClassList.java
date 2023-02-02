@@ -25,10 +25,10 @@ public class ClassList {
 
     public double classAverage(){
         double av = 0;
-        for(int i = 0; i<students.length; i++){
+        for(int i = 0; i<nextIndex; i++){
             av += students[i].getStGrade();
         }
-        return av/students.length;
+        return av/nextIndex;
     }
 }
 
