@@ -35,16 +35,36 @@ class CarPark{
 
     public CarPark(){
         cars = new Car[50];
-        occupied = 0;
+        occupied = 0;  //indicates the index of next space available on the array
     }
 
     /* @return the number of free spaces on the parking lot */
     public int freeSpaces(){
+        //return cars.length - occupied;
+        int counter = 0;
+        for(int i = 0; i < cars.length; i++){
+            if(cars[i] == null){
+                counter++;
+            }
+        }
+        return counter;
 
     }
 
     /* @prints the licencePlate of each car currently in the parking lot */
     public void printLicense(){
+        //option 1
+        for(int i = 0; i < cars.length; i++){
+            if(cars[i]!= null){
+                System.out.println(cars[i].getLicencePlate());
+            }
+        }
+
+        //option 2
+        for(int i = 0; i < occupied; i++){
+            System.out.println(cars[i].getLicencePlate());
+
+        }
 
     }
 
