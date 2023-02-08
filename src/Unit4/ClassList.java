@@ -30,6 +30,31 @@ public class ClassList {
         }
         return av/nextIndex;
     }
+
+    //return the position of a student name
+    //or -1 if not found
+    public int search(String name){
+        for(int i = 0; i < nextIndex; i++){
+            if(students[i] != null &&
+                    students[i].getStName().equals(name)){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    //prints the name of the student with the best GPA
+    public void highestGPA(){
+        double max = -1;
+        int indexHighest = -1;
+        for(int i= 0; i<nextIndex; i++){
+            if(students[i].getStGrade() > max){
+                max = students[i].getStGrade();
+                indexHighest = i;
+            }
+        }
+        System.out.println(students[indexHighest].getStName());
+    }
 }
 
 class ClassListRunner{
