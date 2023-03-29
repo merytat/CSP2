@@ -16,6 +16,10 @@ public class CarRepair {
     public int getBayNum()
     { return bayNum; }
 
+    public void setBayNum(int newB){
+        bayNum = newB;
+    }
+
 // There may be other constructors, and methods not shown.
 
 }
