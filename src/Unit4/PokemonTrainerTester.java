@@ -53,6 +53,13 @@ public class PokemonTrainerTester {
                     System.out.println(name + " was not found");
                 }
             } else if (option == 3) {
+                //1 mark
+                kb.nextLine();
+                System.out.print("Enter species: ");
+                String species = kb.nextLine();
+                System.out.println(species + " pokemon...");
+                //1 mark
+                pt.list(species);
                 //add your code for option 3 here according to the sample output
             } else if (option == 4) {
                 //add your code for option 3 here according to the sample output
